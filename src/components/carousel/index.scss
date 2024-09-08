@@ -1,0 +1,15 @@
+.carousel{
+    img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: top;
+    }
+    //selector div nao vua co class la carousel va vua co multi-item
+    // dau & dai dien cho carousel
+    &.multi-item{
+        img{
+           height: 200px;
+        }
+    }
+}

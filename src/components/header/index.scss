@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.25);
+    padding: 0px 200px;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    &__nav {
+       display: flex;
+        ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        li a{
+            text-decoration: none ;
+            color: #fff;
+            font-size: 25px;
+        }
+        .icon{
+            font-size: 35px;
+            color: #fff;
+        }
+    }
+    &__search{
+    padding:10px 300px ;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: flex;
+        transition: all 0.5s;
+        input {
+        padding: 10px 0px;
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+       &.active{
+            top: 100%;
+       }
+    }
+}
